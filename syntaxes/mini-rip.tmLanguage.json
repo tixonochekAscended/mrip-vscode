@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mini-rip",
+	"patterns": [
+		{
+			"include": "#sigils"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"sigils": {
+			"patterns": [
+				{
+					"name": "keyword.operator.sigil.minirip",
+					"match": "^(\\s*)([!@#$%^&*?=<>:;.|+\\-/])"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.minirip",
+					"match": "-?\\b\\d+\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.minirip",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.minirip",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.minirip"
+}

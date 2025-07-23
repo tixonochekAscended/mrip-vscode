@@ -1,0 +1,11 @@
+{
+    "comments": {},
+    "autoClosingPairs": [
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    "surroundingPairs": [
+        ["\"", "\""],
+        ["'", "'"]
+    ]
+}

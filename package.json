@@ -1,0 +1,48 @@
+{
+  "name": "mini-rip",
+  "displayName": "mini-rip",
+  "description": "Highlighting for the esoteric, interpreted programming language mini-rip made by tixonochek.",
+  "publisher": "tixonochek",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tixonochekAscended/mrip-vscode"
+  },
+  "homepage": "https://github.com/tixonochekAscended/mrip-vscode",
+  "bugs": {
+    "url": "https://github.com/tixonochekAscended/mrip-vscode/issues"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mini-rip",
+        "aliases": [
+          "mini-rip-vscode",
+          "mripvscode"
+        ],
+        "extensions": [
+          ".mrip"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./images/mrip-icon.svg",
+          "dark": "./images/mrip-icon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mini-rip",
+        "scopeName": "source.minirip",
+        "path": "./syntaxes/mini-rip.tmLanguage.json"
+      }
+    ]
+  },
+  "icon": "images/mrip-icon.png"
+}
